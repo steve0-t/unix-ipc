@@ -1,0 +1,7 @@
+.cache/
+bak_dir/
+build/
+proc_pr.err
+proc_pr.out
+proc_s.err
+proc_s.out
