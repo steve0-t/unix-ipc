@@ -1,6 +1,5 @@
-BasedOnStyle: LLVM
+BasedOnStyle: GNU
 AccessModifierOffset: -2
-AlignAfterOpenBracket: Align
 AlignConsecutiveMacros: true
 AlignConsecutiveAssignments: true
 AlignEscapedNewlines: Right
@@ -11,18 +10,18 @@ AllowAllConstructorInitializersOnNextLine: true
 AllowAllParametersOfDeclarationOnNextLine: true
 AllowShortBlocksOnASingleLine: true
 AllowShortCaseLabelsOnASingleLine: true
-AllowShortFunctionsOnASingleLine: Empty
-AllowShortIfStatementsOnASingleLine: Never
+AllowShortFunctionsOnASingleLine: All
+AllowShortIfStatementsOnASingleLine: true
 AllowShortLambdasOnASingleLine: All
-AllowShortLoopsOnASingleLine: false
+AllowShortLoopsOnASingleLine: true
 AlwaysBreakAfterDefinitionReturnType: None
 AlwaysBreakAfterReturnType: None
 AlwaysBreakBeforeMultilineStrings: false
 AlwaysBreakTemplateDeclarations: Yes
-BreakBeforeBraces: Attach
+BreakBeforeBraces: Allman
 BreakBeforeTernaryOperators: false
 BreakConstructorInitializers: AfterColon
-ColumnLimit: 180
+ColumnLimit: 80
 CompactNamespaces: false
 ConstructorInitializerAllOnOneLineOrOnePerLine: false
 ExperimentalAutoDetectBinPacking: false
@@ -40,6 +39,7 @@ SpaceAfterTemplateKeyword: true
 SpaceBeforeCtorInitializerColon: true
 SpaceBeforeInheritanceColon: true
 SpaceBeforeParens: ControlStatements
+AlignAfterOpenBracket: true
 SpaceBeforeRangeBasedForLoopColon: true
 SpaceInEmptyParentheses: false
 SpacesBeforeTrailingComments: 1
@@ -52,10 +52,10 @@ Standard: Auto
 TabWidth: 4
 UseTab: Never
 
-AllowShortEnumsOnASingleLine: false
+AllowShortEnumsOnASingleLine: true
 
-BraceWrapping:
-  AfterEnum: false
+# BraceWrapping:
+#   AfterEnum: false
 
 AlignConsecutiveDeclarations: AcrossEmptyLines
 
