@@ -32,7 +32,8 @@
 #define TIME_TO_WAIT 15
 
 // Enum containing processes to launch
-enum Program {
+enum Program
+{
     P1 = 0,
     P2,
     PR,
@@ -45,12 +46,14 @@ enum Program {
 };
 
 // To make pipe ops more sensible
-enum Pipe_ends {
+enum Pipe_ends
+{
     READ  = 0,
     WRITE = 1
 };
 
-typedef struct {
+typedef struct
+{
     int   pd_1[2];
     int   pd_2[2];
     void* shm_addr1;
@@ -61,12 +64,14 @@ typedef struct {
     int   sem_id2;
 } Ipc_resources;
 
-typedef struct {
+typedef struct
+{
     const char* name;
     const char* pathname;
 } ProgramInfo;
 
-union semun {
+union semun
+{
     int              val;
     struct semid_ds* buf;
     unsigned short*  array;

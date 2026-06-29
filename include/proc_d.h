@@ -22,6 +22,7 @@ char* attach_shm(int shm_id);
 int   connect_to_server(const int port_no);
 void  send_to_server(const int sock_fd, const char* buffer);
 void  handler_d(int sig_num);
-void  convert_args_d(const char** argv, int* shm2_id, int* sem2_id, int* port_no);
+void  convert_args_d(const char** argv, int* shm2_id, int* sem2_id,
+                     int* port_no);
 
 #endif
